@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div,
+header,
+footer,
+nav {
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.container div:nth-child(2) {
+    flex-grow: 4;
+    border-radius: 50%;
+    height: 70%;
+}
+
+.container div {
+    height: 100vh;
+    flex-grow: 1;
+}
+
+.container {
+    margin: 0px;
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: inherit;
+    justify-content: flex-start;
+    align-items: flex-start;
+}

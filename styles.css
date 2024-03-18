@@ -1,0 +1,44 @@
+section, aside, header, footer{
+    border: 1px solid #000;
+    margin: 3px;
+    min-height: 30vh;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    aside{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    aside{
+        display: block;
+    } 
+
+    main, aside, section{
+        min-height: 100vh;
+        float: left;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    section{
+        width: 57%;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+
+    aside{
+        width: 20%;
+    }
+
+    footer{
+        float: left;
+        width: 100%;
+    }
+}
